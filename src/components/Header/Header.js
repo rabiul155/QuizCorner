@@ -11,19 +11,20 @@ const Header = () => {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <Link className="navbar-brand fw-bolder text-primary" href="#">Quiz-Corner</Link>
-                    <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <div className="collapse navbar-collapse " id="navbarTogglerDemo03">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
 
                         </ul>
-                        <div className="d-flex justify-content-between link-btn">
+                        <div className="d-flex justify-content-between link-btn ">
                             <Link className='btn me-4 fw-bold' to='/'>Topics</Link>
                             <Link className='btn  me-4 fw-bold' to='/statistics'>Statistics</Link>
                             <Link className='btn me-4 fw-bold' to='/blog'> Blog</Link>
-
                         </div>
                     </div>
                 </div>
             </nav>
+
+
         </div>
     );
 };

@@ -1,4 +1,13 @@
-.option {
-    min-height: 50px;
-    width: auto;
+.q-option:hover {
+    background-color: rgba(80, 156, 248, 0.66);
+    color: white;
+}
+
+.right {
+    background-color: green;
+
+}
+
+.wrong {
+    background-color: red;
 }

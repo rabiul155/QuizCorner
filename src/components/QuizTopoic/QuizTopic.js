@@ -7,8 +7,8 @@ const QuizTopic = ({ topic }) => {
 
     const { id, name, logo, total } = topic;
     return (
-        <div>
-            <div className="card p-0 card-header " >
+        <div className='m-auto col'>
+            <div className="card p-0 card-header mx-auto my-4 " >
                 <img src={logo} className="card-img-top bg-dark" alt="..." />
                 <div className="card-body">
                     <h5 className="card-title">{name}</h5>

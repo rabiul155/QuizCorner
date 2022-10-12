@@ -5,7 +5,9 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Option = ({ id, option, question, correctAnswer }) => {
 
-    console.log(question, id)
+    console.log(option)
+
+
 
 
     const handleClick = (option) => {
@@ -27,10 +29,13 @@ const Option = ({ id, option, question, correctAnswer }) => {
 
     return (
         <div>
-            <p className={`q-option border rounded-3 fw-bold col border-primary p-3 `}>
-                <input onClick={() => handleClick(option)} className=' me-3 ' type="radio" name={question} />
+            {/* <p onClick={() => handleClick(option)} for={str} className={`q-option border rounded-3 fw-bold col border-primary p-3 `}>
+                <input className=' me-3 ' type="radio" id={str} name={question} />
                 {option}
-            </p>
+            </p> */}
+            <div >
+                <label className={`q-option m-2 border w-100 rounded-3 fw-bold col border-primary p-2 `} for={option}> <input onClick={() => handleClick(option)} className='me-3' type="radio" id={option} name={question} />{option} </label>
+            </div>
 
             <ToastContainer />
         </div>

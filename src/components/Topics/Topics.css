@@ -1,6 +1,6 @@
 .banner {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../images/home.jpg);
-    width: 100%;
+    min-width: 300px;
     height: 300px;
 
 

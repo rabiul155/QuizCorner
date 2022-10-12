@@ -7,17 +7,18 @@ const Option = ({ id, option, question, correctAnswer }) => {
 
     console.log(option)
 
-    const handleClick = (option) => {
 
-        console.log(id);
+    const handleClick = (option) => {
 
         if (option === correctAnswer) {
 
-            toast("Right answer")
+            toast("Right answer");
+
         }
         else {
 
-            toast("Wrong answer")
+            toast("Wrong answer");
+
         }
 
     }
@@ -25,7 +26,7 @@ const Option = ({ id, option, question, correctAnswer }) => {
     return (
         <div>
             <div >
-                <label className={`q-option m-2 border w-100 rounded-3 fw-bold col border-primary p-2 `} for={option}> <input onClick={() => handleClick(option)} className='me-3' type="radio" id={option} name={question} />{option} </label>
+                <label className={`q-option m-2 border w-100 rounded-3 fw-bold col border-primary p-2`} for={option}> <input onClick={() => handleClick(option)} className='me-3' type="radio" id={option} name={question} />{option} </label>
             </div>
             <ToastContainer />
         </div>

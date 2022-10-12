@@ -21,7 +21,7 @@ const TestQuiz = ({ quiz }) => {
                 <i onClick={() => notify(correctAnswer)} className="fa-solid fa-eye fs-4 position-absolute top-0  end-0"></i>
                 <ToastContainer />
             </div>
-            <div className=' row row-cols-2 w-75 m-auto '>
+            <div className=' row row-cols-sm-2 w-75 m-auto '>
                 {
                     options.map((option, idx) => <Option
                         key={idx}

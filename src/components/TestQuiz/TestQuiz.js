@@ -8,6 +8,16 @@ const TestQuiz = ({ quiz }) => {
 
     console.log(quiz)
 
+    function removeTags(str) {
+        if ((str === null) || (str === ''))
+            return false;
+        else
+            str = str.toString();
+        return str.replace(/(<([^>]+)>)/ig, '');
+    }
+
+    const question2 = removeTags(question);
+
     const notify = (correctAnswer) => {
         toast('Correct ans is ' + correctAnswer)
     }
@@ -17,7 +27,7 @@ const TestQuiz = ({ quiz }) => {
         <div className=' border border-2 border-primary p-2 rounded-3 m-4'>
 
             <div className=' d-flex justify-content-center position-relative'>
-                <h3 className=' pb-2 me-5'> {question} </h3>
+                <h3 className=' pb-2 me-5'> {question2} </h3>
                 <i onClick={() => notify(correctAnswer)} className="fa-solid fa-eye fs-4 position-absolute top-0  end-0"></i>
                 <ToastContainer />
             </div>

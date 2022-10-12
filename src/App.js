@@ -10,6 +10,7 @@ import Main from './layouts/Main';
 function App() {
   const router = createBrowserRouter([
     {
+
       path: '/',
       element: <Main></Main>,
       children: [
@@ -36,7 +37,15 @@ function App() {
           element: <Quiz></Quiz>
         }
       ]
+    },
+    {
+      path: '/*',
+      element: <h2>Oppss.....Page not Found</h2>
     }
+
+
+
+
   ])
   return (
     <div className="App">

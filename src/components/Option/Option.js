@@ -28,7 +28,7 @@ const Option = ({ id, option, question, correctAnswer }) => {
     return (
         <div>
             <p className={`q-option border rounded-3 fw-bold col border-primary p-3 `}>
-                <input onClick={() => handleClick(option)} className=' me-3' type="radio" name={question} />
+                <input onClick={() => handleClick(option)} className=' me-3 ' type="radio" name={question} />
                 {option}
             </p>
 
